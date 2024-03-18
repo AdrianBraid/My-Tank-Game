@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body id='body'>
+  <H1 class='title'> The Battle Of Tanks</H1>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <!-- Instructions related features -->
+  <button id = instructionButton onclick='instructions()'> <img src="questionmark.png" width =450px, height = 300px> </button>
+  <div id='instruction' hidden='true'>
+    <h1><u>Instructions</u></h1>
+    <p>
+      Welcome to The Battle Of Tanks! The objective of the game is to go around the map, in your own tank, and kill the enemy tanks. You have the capabilities to shoot and move your tank. You are also provided with the opportunity to enter multiplayer with your friends on your device! The higher the score you have, the better you performed in the game. Your time is also taken into account to see how fast you’ve completed the game. Below are the buttons you need to know for you, the user tank:
+    </p>
+    <img src = "instruction.png" alt="Instruction Symbols">
+    <p> If you choose to play multiplayer, the controls for the blue tank is the same, but the controls for the enemy tank is shown below:
+    </p>
+      <img src = "InstructionUser.png" alt = "Instruction Enemy Symbols">
+    <p><u><b>To exit this menu, click on the question mark icon</b></u></p>
+  </div>
+  <!-- Play button   -->
+  <button class='playButton' onclick="window.location.href='SinglePlayerGame.html'"><img src="playbutton.png">
+  <!--  Mutliplayer button  -->
+  <button class='multiplayerButton' onclick="window.location.href='MultiplayerGame.html'" ><img src="multiplayer.png" width =215px, height = 210px></button>
+  
+</body>
+<script>
+  // for showing the instructions menu
+  function instructions() {
+    if (document.getElementById('instruction').hidden == true) {
+      document.getElementById('instruction').hidden = false
+    }
+    else if (document.getElementById('instruction').hidden == false) {
+      document.getElementById('instruction').hidden = true
+    }
+  }
+</script>
+
+</html>

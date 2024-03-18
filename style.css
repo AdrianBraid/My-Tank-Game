@@ -1,0 +1,63 @@
+
+body {
+  overflow: hidden;
+  text-align: center;
+  border: 20px ridge black;
+  width: 97.3vw;
+  height: 94vh;
+  background-image: url('thumbnail_image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 80px;  
+}
+
+.playButton{
+  border-radius: 1px;
+  border: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  position:relative;
+  bottom:30%;
+  top:48%;
+}
+
+#instructionButton{
+  border-radius: 1px;
+  border: none;
+  background-color:transparent;
+  margin: 0;
+  position: absolute;
+  top: 67%;
+  left: 80%;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+/* deals with instruction menu */
+#instruction {
+  background-color:rgb(156, 156, 156);
+  text-align: center;
+  width: 60%;
+  height:75%;
+  margin: auto;
+}
+
+.multiplayerButton{
+  border-radius: 1px;
+  border: none;
+  background-color:transparent;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 3%;
+  cursor:pointer;
+  overflow: hidden;
+}
